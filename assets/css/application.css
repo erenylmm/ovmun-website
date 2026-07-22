@@ -1,0 +1,447 @@
+/*=========================================
+            APPLICATION PAGE
+=========================================*/
+
+.application-page{
+
+    min-height:100vh;
+
+    padding:160px 8% 80px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+/*=========================================
+                TITLE
+=========================================*/
+
+.page-title{
+
+    font-size:4rem;
+
+    font-weight:800;
+
+    letter-spacing:-2px;
+
+    color:#ffffff;
+
+    text-align:center;
+
+    text-shadow:
+        0 10px 30px rgba(0,0,0,.35);
+
+    opacity:0;
+
+    animation:titleFade .9s forwards;
+
+    margin-bottom:20px;
+
+}
+
+.page-description{
+
+    max-width:700px;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.72);
+
+    font-size:1.08rem;
+
+    line-height:1.8;
+
+    margin-bottom:70px;
+
+    opacity:0;
+
+    animation:titleFade .9s forwards;
+
+    animation-delay:.15s;
+
+}
+
+/*=========================================
+        APPLICATION CONTAINER
+=========================================*/
+
+.application-container{
+
+    width:100%;
+
+    max-width:1300px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:40px;
+
+}
+
+/*=========================================
+            APPLICATION CARD
+=========================================*/
+
+.application-card{
+
+    min-height:240px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+    border-radius:26px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.30);
+
+    cursor:pointer;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+    opacity:0;
+
+    animation:cardAppear .8s ease forwards;
+
+}
+
+/*=========================================
+                HOVER
+=========================================*/
+
+.application-card:hover{
+
+    transform:
+        translateY(-10px)
+        scale(1.015);
+
+    border-color:
+        rgba(242,140,56,.35);
+
+    box-shadow:
+
+        0 30px 70px rgba(0,0,0,.38),
+
+        0 0 40px rgba(242,140,56,.08);
+
+}
+
+/*=========================================
+            POSITION NAME
+=========================================*/
+
+.application-card h2{
+
+    color:#ffffff;
+
+    font-size:1.9rem;
+
+    font-weight:700;
+
+    letter-spacing:.5px;
+
+    margin-bottom:30px;
+
+}
+
+/*=========================================
+            APPLY BUTTON
+=========================================*/
+
+.apply-button{
+
+    padding:14px 34px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(242,140,56,.35);
+
+    background:rgba(242,140,56,.08);
+
+    color:#F28C38;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+
+}
+
+.application-card:hover .apply-button{
+
+    background:#F28C38;
+
+    color:white;
+
+    border-color:#F28C38;
+
+    transform:translateY(-2px);
+
+}
+
+/*=========================================
+            UNDERLINE
+=========================================*/
+
+.application-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:0;
+
+    transform:translateX(-50%);
+
+    width:0;
+
+    height:3px;
+
+    border-radius:999px;
+
+    background:linear-gradient(
+        90deg,
+        #F28C38,
+        #B67CFF
+    );
+
+    transition:.35s;
+
+}
+
+.application-card:hover::after{
+
+    width:75%;
+
+}
+/*=========================================
+        APPLICATION MODAL
+=========================================*/
+
+.application-message{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding-top:60px;
+
+}
+
+.application-message h2{
+
+    font-size:2.5rem;
+
+    color:#F28C38;
+
+    margin-bottom:22px;
+
+}
+
+.application-message p{
+
+    max-width:520px;
+
+    color:rgba(255,255,255,.72);
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+}
+/*=========================================
+            APPLICATION MODAL
+=========================================*/
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:10000;
+
+}
+
+.modal-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.committee-modal{
+
+    width:min(900px,90vw);
+
+    min-height:420px;
+
+    background:rgba(18,22,35,.88);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:28px;
+
+    backdrop-filter:blur(30px);
+
+    -webkit-backdrop-filter:blur(30px);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.45);
+
+    position:relative;
+
+    padding:45px;
+
+    transform:scale(.85);
+
+    opacity:0;
+
+    transition:
+        transform .35s,
+        opacity .35s;
+
+}
+
+.modal-overlay.active .committee-modal{
+
+    transform:scale(1);
+
+    opacity:1;
+
+}
+
+.close-modal{
+
+    position:absolute;
+
+    top:20px;
+
+    right:24px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:1.6rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.close-modal:hover{
+
+    background:rgba(242,140,56,.18);
+
+    transform:rotate(90deg);
+
+}
+.application-message{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.application-message h2{
+
+    color:#F28C38;
+
+    font-size:2.6rem;
+
+    margin-bottom:20px;
+
+}
+
+.application-message p{
+
+    color:rgba(255,255,255,.72);
+
+    font-size:1.40rem;
+
+    line-height:1.8;
+
+    max-width:520px;
+
+}

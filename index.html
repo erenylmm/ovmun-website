@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OVMUN | #PraiseTheConference</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="background"></div>
+    <div class="aurora aurora-1"></div>
+    <div class="aurora aurora-2"></div>
+    <div class="aurora aurora-3"></div>
+    <div class="particles" id="particles"></div>
+    <!-- ===================== NAVBAR ===================== -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                OVMUN
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html" class="active">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="committees.html">
+                        Committees
+                    </a>
+                </li>
+
+                <li>
+                    <a href="application.html">
+                        Application
+                    </a>
+                </li>
+
+                <li>
+                    <a href="team.html">
+                        Team
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ===================== HOME ===================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <!-- LEFT -->
+
+            <div class="left-side">
+
+    <div class="hero-text">
+
+        <div class="hero-title">
+
+    <h1>OVMUN'26</h1>
+
+    <p>Official Website</p>
+
+</div>
+<div class="conference-date">
+
+    March 13–15, 2026
+
+</div>
+        <div class="countdown">
+
+            <div class="time-box">
+                <span id="days">000</span>
+                <p>Days</p>
+            </div>
+
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+
+        </div>
+
+        <h2 class="motto">
+            #PraiseTheConference
+        </h2>
+
+    </div>
+
+</div>
+
+            <!-- RIGHT -->
+
+            <div class="right-side">
+
+                <img src="assets/images/logo/logo-transparent.png"
+                    alt="OVMUN Logo"
+                    class="hero-logo">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <section class="venue-section">
+
+    <h2 class="venue-title">
+
+        Our Venue
+
+    </h2>
+
+    <div class="venue-card">
+
+    <div id="venueMap"></div>
+
+</div>
+
+<div class="venue-bottom">
+
+    <h3>Övgü Terzibaşıoğlu Anadolu Lisesi</h3>
+
+    <a
+        href="https://maps.app.goo.gl/dDRmZA6VjRw1qE7N8"
+        target="_blank"
+        class="venue-button">
+
+        Open in Google Maps →
+
+    </a>
+
+</div>
+
+</section>
+
+    <!-- ===================== JS ===================== -->
+    <!-- Footer -->
+
+<footer class="footer">
+
+    <div class="footer-links">
+
+        <a
+            href="#"
+            target="_blank"
+            class="footer-link">
+
+            Instagram
+
+        </a>
+
+        <button
+            class="footer-link"
+            id="contactButton">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p class="footer-copyright">
+
+        © 2026 OVMUN. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<!-- Contact Modal -->
+
+<div class="modal-overlay" id="contactModal">
+
+    <div class="contact-modal">
+
+        <button
+            class="close-modal"
+            id="closeContactModal">
+
+            &times;
+
+        </button>
+
+        <div id="contactContent">
+
+        </div>
+
+    </div>
+
+</div>
+    <script src="assets/js/background.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/footer.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/js/venue.js"></script>
+
+</body>
+
+</html>

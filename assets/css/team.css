@@ -1,0 +1,419 @@
+/*=========================================
+                TEAM PAGE
+=========================================*/
+
+.team-page{
+
+    min-height:100vh;
+
+    padding:160px 8% 80px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+/*=========================================
+                TITLE
+=========================================*/
+
+.page-title{
+
+    font-size:4rem;
+
+    font-weight:800;
+
+    letter-spacing:-2px;
+
+    color:#ffffff;
+
+    text-align:center;
+
+    text-shadow:
+        0 10px 30px rgba(0,0,0,.35);
+
+    opacity:0;
+
+    animation:titleFade .9s forwards;
+    margin-bottom:20px;
+    
+
+}
+
+.page-description{
+
+    max-width:720px;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.75);
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+
+    margin-bottom:70px;
+    opacity:0;
+
+    animation:titleFade .9s forwards;
+
+}
+
+/*=========================================
+            TEAM CONTAINER
+=========================================*/
+
+.team-container{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,320px);
+
+    justify-content:start;
+
+    gap:40px;
+
+}
+
+/*=========================================
+                CARD
+=========================================*/
+
+.team-card{
+    justify-content:flex-start;
+    width:320px;
+
+    height:460px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:26px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.30);
+
+    padding:38px 30px 28px;
+
+    text-align:center;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+    opacity:0;
+
+    animation:cardAppear .8s ease forwards;
+}
+
+/* Hover */
+
+.team-card:hover{
+
+    transform:
+        translateY(-10px);
+
+    border-color:
+        rgba(242,140,56,.45);
+
+    box-shadow:
+
+        0 30px 60px rgba(0,0,0,.35),
+
+        0 0 30px rgba(242,140,56,.08);
+
+}
+
+/*=========================================
+            PHOTO
+=========================================*/
+
+.member-photo{
+
+    width:180px;
+
+    height:180px;
+
+    margin:0 auto 28px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.05);
+
+    border:2px solid rgba(255,255,255,.12);
+
+    transition:
+        transform .4s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.member-photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:
+        transform .45s ease,
+        filter .35s ease;
+
+    filter:
+        brightness(.92)
+        saturate(.95);
+
+}
+
+.team-card:hover .member-photo{
+
+    transform:
+        scale(1.04)
+        translateY(-3px);
+
+    border-color:rgba(242,140,56,.45);
+
+    box-shadow:
+
+        0 0 30px rgba(242,140,56,.16);
+
+}
+
+.member-photo span{
+
+    font-size:2.4rem;
+
+    font-weight:800;
+
+    color:white;
+
+    letter-spacing:2px;
+
+}
+
+/*=========================================
+                NAME
+=========================================*/
+
+.team-card h3{
+
+    color:white;
+
+    font-size:1.55rem;
+
+    font-weight:700;
+
+    margin-top:22px;
+
+    margin-bottom:10px;
+
+}
+
+/*=========================================
+                ROLE
+=========================================*/
+
+.team-card p{
+
+    color:rgba(255,255,255,.58);
+
+    font-size:.96rem;
+
+    line-height:1.6;
+
+    text-align:center;
+
+    max-width:220px;
+
+}
+
+/*=========================================
+            UNDERLINE
+=========================================*/
+
+.team-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:0;
+
+    transform:translateX(-50%);
+
+    width:0;
+
+    height:3px;
+
+    border-radius:50px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #F28C38,
+            #B67CFF
+        );
+
+    transition:.35s;
+
+}
+
+.team-card:hover::after{
+
+    width:75%;
+
+}
+.team-card:hover .member-photo img{
+
+    transform:scale(1.06);
+
+    filter:
+        brightness(1)
+        saturate(1.05);
+
+}
+
+/*=========================================
+            TEAM SECTIONS
+=========================================*/
+
+.team-section{
+
+    width:100%;
+
+    max-width:1300px;
+
+    margin-top:110px;
+
+}
+
+.team-section:first-of-type{
+
+    margin-top:20px;
+
+}
+
+/*=========================================
+            SECTION TITLE
+=========================================*/
+
+.section-title{
+
+    position:relative;
+
+    display:inline-block;
+
+    color:#ffffff;
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    margin-bottom:45px;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    display:block;
+
+    width:140px;
+
+    height:3px;
+
+    margin-top:14px;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        90deg,
+        #F28C38,
+        #B67CFF
+    );
+
+}
+
+/*=========================================
+            CARD FOOTER
+=========================================*/
+
+.card-footer{
+
+    margin-top:auto;
+
+    width:100%;
+
+    padding-top:18px;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    text-align:center;
+
+    font-size:.72rem;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    color:rgba(255,255,255,.22);
+
+    transition:
+        color .35s ease,
+        border-color .35s ease,
+        letter-spacing .35s ease;
+
+}
+.team-card:hover .card-footer{
+
+    color:rgba(242,140,56,.88);
+
+    border-top-color:rgba(242,140,56,.28);
+
+    letter-spacing:2.8px;
+
+}
+.team-card:hover{
+
+    transform:
+        translateY(-10px)
+        scale(1.015);
+
+    border-color:rgba(242,140,56,.35);
+
+    box-shadow:
+
+        0 30px 70px rgba(0,0,0,.38),
+
+        0 0 40px rgba(242,140,56,.08);
+
+}

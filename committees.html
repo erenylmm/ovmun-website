@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Committees | OVMUN'26</title>
+
+    <link rel="icon" type="image/png" href="assets/images/logo/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/committees.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+</head>
+
+<body>
+
+    <!-- Background -->
+
+    <div class="background">
+
+        <div class="aurora aurora-1"></div>
+        <div class="aurora aurora-2"></div>
+        <div class="aurora aurora-3"></div>
+
+        <div class="particles" id="particles"></div>
+
+    </div>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                OVMUN
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="committees.html" class="active">Committees</a></li>
+
+                <li><a href="application.html">Application</a></li>
+
+                <li><a href="team.html">Team</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+
+    <main class="committees-page">
+
+        <h1 class="page-title">Our Committees</h1>
+
+<div class="committee-container">
+
+    <!-- UN WOMEN -->
+
+    <div class="committee-card" data-modal="unwomen">
+
+        <div class="committee-image">
+            <img src="assets/images/committees/unwomen.jpg" alt="UNWomen">
+        </div>
+
+        <h2>UNWOMEN</h2>
+
+    </div>
+
+    <!-- NATO -->
+
+    <div class="committee-card" data-modal="nato">
+
+        <div class="committee-image">
+            <img src="assets/images/committees/nato.jpg" alt="NATO">
+        </div>
+
+        <h2>NATO</h2>
+
+    </div>
+
+    <!-- WHO -->
+
+    <div class="committee-card" data-modal="who">
+
+        <div class="committee-image">
+            <img src="assets/images/committees/who.jpg" alt="WHO">
+        </div>
+
+        <h2>WHO</h2>
+
+    </div>
+
+</div>
+
+    </main>
+
+    <!-- Modal -->
+
+    <div class="modal-overlay" id="modalOverlay">
+
+        <div class="committee-modal">
+
+            <button class="close-modal" id="closeModal">
+                &times;
+            </button>
+
+            <div id="modalContent">
+
+                <!-- Şimdilik boş bırakıyoruz -->
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Footer -->
+
+<footer class="footer">
+
+    <div class="footer-links">
+
+        <a
+            href="#"
+            target="_blank"
+            class="footer-link">
+
+            Instagram
+
+        </a>
+
+        <button
+            class="footer-link"
+            id="contactButton">
+
+            Contact
+
+        </button>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <p class="footer-copyright">
+
+        © 2026 OVMUN. All Rights Reserved.
+
+    </p>
+
+</footer>
+
+<!-- Contact Modal -->
+
+<div class="modal-overlay" id="contactModal">
+
+    <div class="contact-modal">
+
+        <button
+            class="close-modal"
+            id="closeContactModal">
+
+            &times;
+
+        </button>
+
+        <div id="contactContent">
+
+        </div>
+
+    </div>
+
+</div>
+    <script src="assets/js/background.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/committees.js"></script>
+    <script src="assets/js/footer.js"></script>
+
+</body>
+
+</html>

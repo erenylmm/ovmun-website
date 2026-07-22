@@ -1,0 +1,447 @@
+/*=========================================
+            BACKGROUND
+=========================================*/
+
+.background{
+
+    animation:gradientMove 18s ease infinite;
+
+}
+
+@keyframes gradientMove{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+/*=========================================
+            PAGE LOAD
+=========================================*/
+
+body{
+
+    animation:fadeInPage 1.2s ease;
+
+}
+
+@keyframes fadeInPage{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/*=========================================
+            HERO LOGO
+=========================================*/
+
+.hero-logo{
+
+    animation:floating 6s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/*=========================================
+            COUNTDOWN
+=========================================*/
+
+.time-box{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.time-box:nth-child(2){
+
+    animation-delay:.1s;
+
+}
+
+.time-box:nth-child(3){
+
+    animation-delay:.2s;
+
+}
+
+.time-box:nth-child(4){
+
+    animation-delay:.3s;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(35px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+            LOGO
+=========================================*/
+
+.logo{
+
+    animation:logoAppear 1s ease;
+
+}
+
+@keyframes logoAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+            NAVBAR
+=========================================*/
+
+.nav-links li{
+
+    animation:navFade .7s ease backwards;
+
+}
+
+.nav-links li:nth-child(1){
+
+    animation-delay:.2s;
+
+}
+
+.nav-links li:nth-child(2){
+
+    animation-delay:.3s;
+
+}
+
+.nav-links li:nth-child(3){
+
+    animation-delay:.4s;
+
+}
+
+.nav-links li:nth-child(4){
+
+    animation-delay:.5s;
+
+}
+
+@keyframes navFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+            HOVER GLOW
+=========================================*/
+
+.time-box:hover{
+
+    box-shadow:
+        0 0 20px rgba(255,255,255,.08),
+        0 15px 45px rgba(0,0,0,.35);
+
+}
+
+.hero-logo:hover{
+
+    filter:
+        drop-shadow(0 0 25px rgba(255,255,255,.20));
+
+}
+
+/*=========================================
+            NAV HOVER
+=========================================*/
+
+.nav-links a{
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+
+}
+
+.nav-links a:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/*=========================================
+            SMOOTH TRANSITIONS
+=========================================*/
+
+.time-box,
+.hero-logo,
+.logo,
+.nav-links a{
+
+    transition:all .35s ease;
+
+}
+/*=========================================
+            AURORA MOTION
+=========================================*/
+
+.aurora-1{
+
+    animation:auroraOne 18s ease-in-out infinite alternate;
+
+}
+
+.aurora-2{
+
+    animation:auroraTwo 22s ease-in-out infinite alternate;
+
+}
+
+.aurora-3{
+
+    animation:auroraThree 20s ease-in-out infinite alternate;
+
+}
+
+@keyframes auroraOne{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(120px,70px);
+
+    }
+
+}
+
+@keyframes auroraTwo{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(-120px,-90px);
+
+    }
+
+}
+
+@keyframes auroraThree{
+
+    from{
+
+        transform:translate(0,0);
+
+    }
+
+    to{
+
+        transform:translate(60px,-100px);
+
+    }
+
+}
+@keyframes floatParticle{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-40px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+@keyframes heroGradient{
+
+    0%{
+        background-position:0%;
+    }
+
+    50%{
+        background-position:100%;
+    }
+
+    100%{
+        background-position:0%;
+    }
+
+}
+/*=========================================
+        BORDER FLOW
+=========================================*/
+
+.committee-card:hover .committee-image::before{
+
+    animation:borderFlow 3s linear infinite;
+
+}
+
+@keyframes borderFlow{
+
+    from{
+
+        filter:hue-rotate(0deg);
+
+    }
+
+    to{
+
+        filter:hue-rotate(360deg);
+
+    }
+
+}
+/*=============================
+    CARD APPEAR
+=============================*/
+
+@keyframes cardAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+@keyframes titleFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+        filter:blur(10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+        filter:blur(0);
+
+    }
+
+}

@@ -1,0 +1,255 @@
+/*=========================================
+                FOOTER
+=========================================*/
+
+.footer{
+
+    width:100%;
+
+    margin-top:100px;
+
+    padding:40px 8%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+/*=========================================
+            FOOTER LINKS
+=========================================*/
+
+.footer-links{
+
+    display:flex;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+.footer-link{
+
+    background:none;
+
+    border:none;
+
+    color:rgba(255,255,255,.72);
+
+    font-size:1rem;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+
+}
+
+.footer-link:hover{
+
+    color:#F28C38;
+
+    transform:translateY(-2px);
+
+}
+
+/*=========================================
+                DIVIDER
+=========================================*/
+
+.footer-divider{
+
+    width:min(500px,90%);
+
+    height:1px;
+
+    margin:28px 0;
+
+    background:rgba(255,255,255,.10);
+
+}
+
+/*=========================================
+            COPYRIGHT
+=========================================*/
+
+.footer-copyright{
+
+    color:rgba(255,255,255,.35);
+
+    font-size:.85rem;
+
+    text-align:center;
+
+}
+
+/*=========================================
+            CONTACT MODAL
+=========================================*/
+
+.contact-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+    padding-top:15px;
+
+}
+
+.contact-person{
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:white;
+
+    line-height:1.8;
+
+}
+
+.contact-person strong{
+
+    color:#F28C38;
+
+}
+
+.contact-email{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.82);
+
+    font-size:1rem;
+
+}
+/*=========================================
+            MODAL
+=========================================*/
+
+.modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(12px);
+
+    -webkit-backdrop-filter:blur(12px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:10000;
+
+}
+
+.modal-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.contact-modal{
+
+    width:min(750px,90vw);
+
+    background:rgba(18,22,35,.92);
+
+    border:1px solid rgba(255,255,255,.10);
+
+    border-radius:28px;
+
+    padding:45px;
+
+    position:relative;
+
+    backdrop-filter:blur(30px);
+
+    -webkit-backdrop-filter:blur(30px);
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.45);
+
+    transform:scale(.9);
+
+    opacity:0;
+
+    transition:
+        transform .35s,
+        opacity .35s;
+
+}
+
+.modal-overlay.active .contact-modal{
+
+    transform:scale(1);
+
+    opacity:1;
+
+}
+
+.close-modal{
+
+    position:absolute;
+
+    top:18px;
+
+    right:22px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:1.6rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.close-modal:hover{
+
+    background:rgba(242,140,56,.18);
+
+    transform:rotate(90deg);
+
+}
