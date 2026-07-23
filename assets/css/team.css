@@ -417,3 +417,18 @@
         0 0 40px rgba(242,140,56,.08);
 
 }
+
+#executiveTeam .team-card{
+
+    border-color:rgba(242,140,56,.15);
+
+}
+#executiveTeam .team-card:hover{
+
+    box-shadow:
+
+        0 35px 70px rgba(0,0,0,.42),
+
+        0 0 45px rgba(242,140,56,.14);
+
+}

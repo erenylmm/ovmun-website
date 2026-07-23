@@ -9,18 +9,32 @@ const teamMembers = [
     // =====================
 
     {
-        name: "Coming Soon",
-        role: "Secretary-General",
-        image: "placeholder.png",
-        category: "executive"
-    },
+    name: "Ata Tuna Gündüz",
+    role: "Secretary-General",
+    image: "sg.jpg",
+    category: "executive"
+},
 
-    {
-        name: "Coming Soon",
-        role: "Deputy Secretary-General",
-        image: "placeholder.png",
-        category: "executive"
-    },
+{
+    name: "Zehra Taşal",
+    role: "Director-General",
+    image: "dg.jpg",
+    category: "executive"
+},
+
+{
+    name: "İnci Bilgi",
+    role: "Deputy Secretary-General",
+    image: "dsg.jpg",
+    category: "executive"
+},
+
+{
+    name: "Eren Dündar",
+    role: "Deputy Director-General",
+    image: "ddg.jpg",
+    category: "executive"
+},
 
 
 
