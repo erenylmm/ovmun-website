@@ -94,7 +94,7 @@ modalContent.innerHTML = `
 </div>
 
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSefdMq2PUl6OJNt7iM7usJKt9XZvfiKJCATpOzhymfnZSmcRQ/viewform" class="apply-btn" target="_blank">
+<a href="#" class="apply-btn" target="_blank">
 
     Apply
 
