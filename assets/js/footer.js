@@ -8,9 +8,9 @@ const contacts = [
 
         role:"Secretary-General",
 
-        name:"Coming Soon",
+        name:"Ata Tuna Gündüz",
 
-        phone:"+90 XXX XXX XX XX"
+        phone:"+90 552 926 61 88"
 
     },
 
@@ -18,16 +18,16 @@ const contacts = [
 
         role:"Deputy Secretary-General",
 
-        name:"Coming Soon",
+        name:"İnci Bilgi",
 
-        phone:"+90 XXX XXX XX XX"
+        phone:"+90 542 524 40 18"
 
     }
 
 ];
 
 const conferenceEmail =
-"conference@ovmun.org";
+"ovtalmodelun@gmail.com";
 
 // =========================================
 //              ELEMENTS

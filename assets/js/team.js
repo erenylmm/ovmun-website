@@ -4,10 +4,6 @@
 
 const teamMembers = [
 
-    // =====================
-    // Executive Team
-    // =====================
-
     {
     name: "Ata Tuna Gündüz",
     role: "Secretary-General",
@@ -37,63 +33,74 @@ const teamMembers = [
 },
 
 
-
-    // =====================
-    // Academic Team
-    // =====================
-
     {
-        name: "Coming Soon",
-        role: "Academic Coordinator",
-        image: "placeholder.png",
-        category: "academic"
-    },
-
-    {
-        name: "Coming Soon",
-        role: "Chair",
-        image: "placeholder.png",
-        category: "academic"
-    },
-
-    {
-        name: "Coming Soon",
-        role: "Chair",
-        image: "placeholder.png",
-        category: "academic"
-    },
-
-
-
-    // =====================
-    // Organization Team
-    // =====================
-
-    {
-        name: "Coming Soon",
-        role: "USG of IT",
-        image: "placeholder.png",
+        name: "Eren Yılmam",
+        role: "Head of Press",
+        image: "hofpress.jpg",
         category: "organization"
     },
 
     {
-        name: "Coming Soon",
-        role: "USG of Public Relations",
-        image: "placeholder.png",
+        name: "Duru Meriç Yağcı",
+        role: "Co-Head of Press",
+        image: "cohofpress.jpg",
         category: "organization"
     },
 
     {
-        name: "Coming Soon",
-        role: "USG of Finance",
-        image: "placeholder.png",
+        name: "Duru Cantürk",
+        role: "Head of Entertainment",
+        image: "hofent.jpg",
+        category: "organization"
+    },
+
+
+    {
+        name: "Zehra Yılmaz",
+        role: "Co-Head of Entertainment",
+        image: "cohofent.jpg",
         category: "organization"
     },
 
     {
-        name: "Coming Soon",
-        role: "Organization Team",
-        image: "placeholder.png",
+        name: "Duru Elvin Yılmaz",
+        role: "Head of Administration",
+        image: "hofadmin.jpg",
+        category: "organization"
+    },
+
+    {
+        name: "Melek Tanrıöver",
+        role: "Co-Head of Administration",
+        image: "cohofadmin.jpg",
+        category: "organization"
+    },
+
+    {
+        name: "Ali Eren Aktaş",
+        role: "Head of Security",
+        image: "hofsec.jpg",
+        category: "organization"
+    },
+
+    {
+        name: "Yücel Sarp Şimşek",
+        role: "Co-Head of Security",
+        image: "cohofsec.jpg",
+        category: "organization"
+    },
+
+    {
+        name: "Burak Öztekin",
+        role: "Head of Logistics",
+        image: "hoflog.jpg",
+        category: "organization"
+    },
+
+    {
+        name: "Eren Öksüz",
+        role: "Co-Head of Logistics",
+        image: "cohoflog.jpg",
         category: "organization"
     }
 
