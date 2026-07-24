@@ -42,7 +42,7 @@ const teamMembers = [
 
     {
         name: "Duru Meriç Yağcı",
-        role: "Co-Head of Press",
+        role: "Deputy Head of Press",
         image: "cohofpress.jpg",
         category: "organization"
     },
@@ -57,7 +57,7 @@ const teamMembers = [
 
     {
         name: "Zehra Yılmaz",
-        role: "Co-Head of Entertainment",
+        role: "Deputy Head of Entertainment",
         image: "cohofent.jpg",
         category: "organization"
     },
@@ -71,7 +71,7 @@ const teamMembers = [
 
     {
         name: "Melek Tanrıöver",
-        role: "Co-Head of Administration",
+        role: "Deputy Head of Administration",
         image: "cohofadmin.jpg",
         category: "organization"
     },
@@ -85,7 +85,7 @@ const teamMembers = [
 
     {
         name: "Yücel Sarp Şimşek",
-        role: "Co-Head of Security",
+        role: "Deputy Head of Security",
         image: "cohofsec.jpg",
         category: "organization"
     },
@@ -99,7 +99,7 @@ const teamMembers = [
 
     {
         name: "Eren Öksüz",
-        role: "Co-Head of Logistics",
+        role: "Deputy Head of Logistics",
         image: "cohoflog.jpg",
         category: "organization"
     }
